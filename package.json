@@ -1,0 +1,13 @@
+{
+  "name": "franks-awesome-ski-game",
+  "version": "1.0.0",
+  "description": "Frank's Awesome Ski Game",
+  "main": "worker.js",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0"
+  }
+} 
