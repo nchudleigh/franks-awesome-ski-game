@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franks Awesome Ski Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="main.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f5f5f7;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #1d1d1f;
+            margin: 0 0 10px 0;
+            font-weight: 600;
+            font-size: 24px;
+        }
+
+        #game-container {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+        }
+
+        .instructions {
+            color: #666;
+            text-align: center;
+            max-width: 600px;
+            margin-top: 10px;
+        }
+
+        .key {
+            display: inline-block;
+            background: #f5f5f7;
+            border: 1px solid #d2d2d7;
+            border-radius: 6px;
+            padding: 4px 8px;
+            margin: 2px;
+            font-size: 14px;
+            color: #1d1d1f;
+            box-shadow: 0 2px 0 #d2d2d7;
+            min-width: 30px;
+            text-align: center;
+        }
+
+        .keyboard {
+            background: #f5f5f7;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            display: inline-block;
+            border: 1px solid #d2d2d7;
+        }
+
+        .key-row {
+            display: flex;
+            justify-content: center;
+            margin: 4px 0;
+        }
+
+        .key-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+
+        .game-info {
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Franks Awesome Ski Game</h1>
+    <div class="game-info">
+        Avoid trees and use jumps to get points!<br>
+        Each tree hit costs you a life, but jumps give you points.<br>
+        The game gets faster as you progress!
+    </div>
+    
+    <div id="game-container">
+        <!-- p5.js canvas will be inserted here -->
+    </div>
+
+    <div class="instructions">
+        <div class="keyboard">
+            <div style="display: flex; align-items: center;">
+                <div style="margin-right: 20px;">
+                    <div class="key" style="min-width: 80px;">Space</div>
+                    <div class="key-label">Restart</div>
+                </div>
+                <div>
+                    <div class="key-row">
+                        <div>
+                            <div class="key">↑</div>
+                            <div class="key-label">Speed up</div>
+                        </div>
+                    </div>
+                    <div class="key-row">
+                        <div>
+                            <div class="key">←</div>
+                            <div class="key-label">Left</div>
+                        </div>
+                        <div>
+                            <div class="key">↓</div>
+                            <div class="key-label">Slow down</div>
+                        </div>
+                        <div>
+                            <div class="key">→</div>
+                            <div class="key-label">Right</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
